@@ -65,6 +65,8 @@ def doReport(session, mode=''):
 
     json_form = load_params(session, mode)
 
+    print(json_form)
+    
     res = session.post(url, data=json_form)
     try:
         if json.loads(res.text)['datas']['T_REPORT_EPIDEMIC_CHECKIN_SAVE'] == 1:

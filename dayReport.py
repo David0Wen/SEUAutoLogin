@@ -65,7 +65,7 @@ def doReport(session, mode=''):
 
     json_form = load_params(session, mode)
 
-    print(json_form)
+    # print(json_form)
     
     res = session.post(url, data=json_form)
     try:
